@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='shortcut icon' href='/static/icons/favicon.svg' type='image/x-icon')
+    link(rel='icon' href='/static/icons/favicon.svg' type='image/x-icon')
+    link(rel='stylesheet' href='/static/styles/main.css')
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap' rel='stylesheet')
+    title .blog Web-Application
+  body
+    header
+      .logo
+        a(href='/')
+          img(src='/static/icons/logo.svg' alt='logo')
+      nav#navigation.navigation
+        .menu
+          .content
+            .logo
+              img(src='/static/icons/logo.svg' alt='logo')
+            ul
+              li
+                a(href='/') Main
+              li
+                a(href='/allposts') All posts
+              li
+                a(href='/newpost') New post
+              li
+                a(href='/about') About me
+              li
+                a(href='/contact') Contact me
+            .bottom
+              .socials
+                a(target='_blank' href='https://telegram.org/')
+                  img(src='/static/icons/social-telegram.svg' alt='social icon')
+                a(target='_blank' href='https://www.facebook.com/')
+                  img(src='/static/icons/social-facebook.svg' alt='social icon')
+                a(target='_blank' href='https://instagram.com/')
+                  img(src='/static/icons/social-instagram.svg' alt='social icon')
+              p  This web application was created to fulfill Web Technology module’s requirements and does not represent an actual company or service
+              a(href='mailto:student00010613@gmail.com') 00010613
+          #navButton.button
+            img(src='/static/icons/arrow.svg' alt='arrow')
+    script.
+      document.getElementById('navButton').onclick = function() {
+      var nav = document.getElementById('navigation')
+      var main = document.getElementById('main')
+      
+      nav.classList.toggle('opened');
+      main.classList.toggle('opened');
+      }
+
+    block content

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Typo";
-  src: url("/assets/fonts/TypoGraphica_demo.otf");
+  src: url("/static/fonts/TypoGraphica_demo.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -55,7 +55,7 @@ main {
 }
 
 main::before {
-  background: url(/assets/icons/bg-dots.svg) no-repeat center center/contain;
+  background: url(/static/icons/bg-dots.svg) no-repeat center center/contain;
   width: 40%;
   height: 50%;
   content: "";
@@ -67,7 +67,7 @@ main::before {
 }
 
 main::after {
-  background: url(/assets/icons/bg-logo.svg) no-repeat center center/contain;
+  background: url(/static/icons/bg-logo.svg) no-repeat center center/contain;
   width: 30%;
   height: 50%;
   position: absolute;
@@ -709,7 +709,7 @@ main.allposts .container .items_row .item .content .text span {
   display: flex;
   width: 40px;
   height: 40px;
-  background: url(/assets/icons/favicon.svg) no-repeat center center/contain;
+  background: url(/static/icons/favicon.svg) no-repeat center center/contain;
   margin-right: auto;
   position: absolute;
   bottom: 15px;
