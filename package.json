@@ -1,0 +1,31 @@
+{
+  "name": "00010613websem2",
+  "version": "1.0.0",
+  "description": ".blog Web Apllication to fulfill the requirements of course work on Web Technology module",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/00010613/WEBTECH.SEM2.00010613.git"
+  },
+  "keywords": [
+    "Web",
+    "Technology",
+    "Course",
+    "Work",
+    ".blog",
+    "app"
+  ],
+  "author": "00010613",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/00010613/WEBTECH.SEM2.00010613/issues"
+  },
+  "homepage": "https://github.com/00010613/WEBTECH.SEM2.00010613#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}
