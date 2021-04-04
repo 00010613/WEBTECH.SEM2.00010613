@@ -747,6 +747,26 @@ main.allposts .container .items_row .item .content .text button:hover {
   background: rgba(48, 48, 209, 0.7);
 }
 
+main.allposts .container .noitems {
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.allposts .container .noitems p {
+  font-size: 36px;
+  text-align: center;
+  color: #3030d1;
+  font-weight: 700;
+}
+
 main.newpost {
   -webkit-box-align: start;
       -ms-flex-align: start;

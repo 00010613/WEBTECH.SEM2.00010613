@@ -4,14 +4,19 @@ block content
   main#main.allposts
     .container
       h2 All Posts
-      div(class='items_row')
-        each post in posts_list
-          .item
-            a.content(href=`/post/${ post.id }`)
-              .img
-                img(src=`/static/uploads/${ post.post_image }` alt="post photo")
-              .text
-                h3= post.post_title
-                p= post.post_content
-                span
-                button MORE
+      if posts_list.length > 0      
+        div(class='items_row')
+          each post in posts_list
+            .item
+              a.content(href=`/inner/${ post.id }`)
+                .img
+                  img(src=`/static/uploads/${ post.post_image }` alt="post photo")
+                .text
+                  h3= post.post_title
+                  p= post.post_content
+                  span
+                  button MORE
+
+      else 
+        .noitems
+          p Ooops! No recordings
