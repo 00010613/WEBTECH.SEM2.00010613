@@ -716,7 +716,8 @@ main.allposts .container .items_row .item .content .text span {
   left: 15px;
 }
 
-main.allposts .container .items_row .item .content .text a {
+main.allposts .container .items_row .item .content .text button {
+  border: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -742,7 +743,7 @@ main.allposts .container .items_row .item .content .text a {
   transition: 0.3s;
 }
 
-main.allposts .container .items_row .item .content .text a:hover {
+main.allposts .container .items_row .item .content .text button:hover {
   background: rgba(48, 48, 209, 0.7);
 }
 

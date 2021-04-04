@@ -18,6 +18,7 @@ app.use('/static/styles', express.static('public/styles'))
 app.use('/static/img', express.static('public/img'))
 app.use('/static/icons', express.static('public/icons'))
 app.use('/static/fonts', express.static('public/fonts'))
+app.use('/static/uploads', express.static('public/uploads'))
 app.use(express.urlencoded({ extended: false }))
 
 
