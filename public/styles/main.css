@@ -750,7 +750,7 @@ main.newpost {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 150px;
+  padding: 100px;
   overflow-y: scroll;
 }
 
@@ -768,7 +768,7 @@ main.newpost .container h2 {
   color: #3030d1;
   text-align: center;
   font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 main.newpost .container form {
@@ -819,6 +819,17 @@ main.newpost .container form .input input {
   height: 100%;
   border: 1px solid #3030d1;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+main.newpost .container form .input input[type="file"] {
+  padding: 25px;
 }
 
 main.newpost .container form .textarea {
@@ -849,6 +860,131 @@ main.newpost .container form textarea {
   border: 1px solid #3030d1;
   border-radius: 10px;
   resize: none;
+}
+
+main.newpost .container form button {
+  padding: 20px 60px;
+  background: #3030d1;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  margin: 20px auto;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+main.newpost .container form button:hover {
+  -webkit-box-shadow: 0px 6px 32px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 32px -20px rgba(0, 0, 0, 0.75);
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+main.newpost .container .success-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+main.newpost .container .success-holder .success {
+  background: lightgreen;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 500px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #3030d1;
+  border-radius: 15px;
+}
+
+main.newpost .container .success-holder .success p {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+main.newpost .container .success-holder .success .close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main.newpost .container .success-holder .success .close:hover {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+main.newpost .container .success-holder .success .close::after {
+  content: "";
+  width: 4px;
+  border-radius: 10px;
+  height: 30px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+main.newpost .container .success-holder .success .close::before {
+  content: "";
+  width: 4px;
+  border-radius: 10px;
+  height: 30px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 main.about {

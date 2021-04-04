@@ -1,10 +1,8 @@
 const PORT = process.env.PORT || 8000
 const express = require('express')
 const app = express()
-const fs = require('fs')
 
 app.set('view engine', 'pug')
-const DB = './data/posts.json'
 
 // ROUTES
 const mainRouter = require("./routes/index.js");

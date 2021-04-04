@@ -4,7 +4,7 @@ block content
   main#main.newpost
     .container
       h2 New Post
-      form(action='#!' method='#!')
+      form(action='/newpost' method='POST'  enctype='multipart/form-data')
         .input
           span Title
           input(type='text' name='title' required)
@@ -14,6 +14,16 @@ block content
         .input
           span Date
           input(type='date' name='date' required)
+        .input
+          span Preview image
+          input(type='file' name='file' accept="image/png, image/jpeg, image/jpg" required)
         .textarea
           span Content
           textarea(name='content' required)
+        button(type="submit") Upload
+
+      if success
+        .success-holder
+          .success
+            p New post successfully created
+            a.close(href='/newpost')
