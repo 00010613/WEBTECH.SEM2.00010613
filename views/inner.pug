@@ -15,5 +15,5 @@ block content
             span Date: 
             | #{ post.post_date }
           p.text #{ post.post_content }
-      a.delete(href='#!') DELETE THIS POST
+      a.delete(href=`/delete/${ post.id }`) DELETE THIS POST
   

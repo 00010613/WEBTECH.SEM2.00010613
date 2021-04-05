@@ -11,6 +11,7 @@ const allpostsRouter = require("./routes/allposts.js");
 const contactRouter = require("./routes/contact.js");
 const innerRouter = require("./routes/inner.js");
 const newpostRouter = require("./routes/newpost.js");
+const deleteRouter = require("./routes/delete.js");
 
 
 
@@ -28,6 +29,7 @@ app.use('/allposts', allpostsRouter)
 app.use('/contact', contactRouter)
 app.use('/inner', innerRouter)
 app.use('/newpost', newpostRouter)
+app.use('/delete', deleteRouter)
 
 
 app.listen(PORT, () => {
