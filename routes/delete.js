@@ -13,7 +13,6 @@ class DbContext {
 
     useCollection(collection = "") {
         this.collection = path.join(root, `data/${collection}`);
-        console.log(this.collection)
     }
 
     deleteOne(id, successCb, errorCb) {

@@ -12,7 +12,7 @@ const contactRouter = require("./routes/contact.js");
 const innerRouter = require("./routes/inner.js");
 const newpostRouter = require("./routes/newpost.js");
 const deleteRouter = require("./routes/delete.js");
-
+const apiRouter = require("./routes/api.js");
 
 
 app.use('/static/styles', express.static('public/styles'))
@@ -30,6 +30,7 @@ app.use('/contact', contactRouter)
 app.use('/inner', innerRouter)
 app.use('/newpost', newpostRouter)
 app.use('/delete', deleteRouter)
+app.use('/api/v1', apiRouter)
 
 
 app.listen(PORT, () => {
