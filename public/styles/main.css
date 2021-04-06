@@ -1384,7 +1384,7 @@ main.inner .container .post .desc {
 main.inner .container .post .desc h2 {
   font-size: 34px;
   color: #3030d1;
-  font-family: "Typo";
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
