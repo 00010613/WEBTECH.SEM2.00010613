@@ -45,3 +45,7 @@ Before starting, make sure that the NODE.JS is installed on your computer. (http
 https://github.com/00010613/WEBTECH.SEM2.00010613.git
 
 https://10613blogwebapp.glitch.me/
+
+### Some experience faced in the process of creation:
+
+The process of creating the application was quite interesting. It is worth noting that due to the complicated design of the front part, it was a bit difficult to typeset the pesponsiveness of the web app, but the task was successfully completed. The materials studied in the seminars were sufficient to produce the functionality of this application. The creation of this application gave me a lot of experience and new knowledge, which I hope in the future will definitely come in handy in my career ladder.
